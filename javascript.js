@@ -3,7 +3,7 @@ var arrayProjects = [];
 for (var i = 0; i < 4; i++) {
   var objArrProj = {
     title: 'Multi-Post Stories',
-    img: '',
+    img: './img/Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['CSS', 'html', 'bootstrap', 'Ruby'],
     buttonOne: 'See Project'
@@ -17,6 +17,7 @@ for(var j = 0; j < arrayProjects.length; j++) {
   document.getElementsByClassName('fill_title')[j].innerHTML = arrayProjects[j].title;
   document.getElementsByClassName('fill_article')[j].innerHTML = arrayProjects[j].description;
   document.getElementsByClassName('fill_button')[j].innerHTML = arrayProjects[j].buttonOne;
+  document.getElementsByClassName('first_logo')[j].style.backgroundImage = 'url(' + arrayProjects[j].img +')';
   if(j <= 0) {
     count = count + 0;
   } else {
