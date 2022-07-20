@@ -150,7 +150,7 @@ for(var m = 0; m < 4; m++) {
   var workElemThirte = document.createElement('button');
   workElemThirte.classList.add('button_pro');
   workElemThirte.setAttribute('type', 'button');
-  workElemThirte.setAttribute("onclick","show_pop("+ m + ");");
+  workElemThirte.setAttribute("onclick","show_pop("+ m -1 + ");");
   document.getElementsByClassName('container_column')[m].appendChild(workElemThirte);
 
   var workElemForteen = document.createElement('span');
