@@ -2,7 +2,7 @@
 
 # Project Name
 
-- ortfolio - mobile menu
+- Portfolio: details popup window
 
 ## Built With
 
@@ -11,6 +11,7 @@
 - Flexbox and CSS Grid in order to make a structure in the html and look nice.
 - Media Query (very important).
 - JavaScript (Fist time using this technology for a particular feature).
+- Linters with an extra ESlint.
 
 ## Getting Started
 
@@ -18,7 +19,7 @@
 
 **This is an example of how you may give instructions on setting up your project locally.**
 
-This is about how to maniplate DOM using js and making the hamburger menu interactively with the user.
+This is about how to maniplate DOM using js and fill automatically the container of the projects in my work section and also pop up window filled automatically with js.
 
 # Project link live version
 https://armandocomellas1.github.io/Desktop-version/
