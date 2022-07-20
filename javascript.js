@@ -1,3 +1,163 @@
+//Here is where the html are created with js for the popup window
+var fstElemDiv = document.createElement('div');
+fstElemDiv.classList.add('container_pop');
+document.getElementById('pop_window').appendChild(fstElemDiv);
+
+var sndElemDiv = document.createElement('div');
+sndElemDiv.classList.add('container_header');
+document.getElementsByClassName('container_pop')[0].appendChild(sndElemDiv);
+
+var fstElemPar = document.createElement('p');
+fstElemPar.classList.add('title_card_one');
+document.getElementsByClassName('container_header')[0].appendChild(fstElemPar);
+
+var trdElemDiv = document.createElement('div');
+trdElemDiv.classList.add('disable_x');
+trdElemDiv.setAttribute("onclick","show_normal();");
+document.getElementsByClassName('container_header')[0].appendChild(trdElemDiv);
+
+var frthElemDiv = document.createElement('div');
+frthElemDiv.classList.add('card_one');
+document.getElementsByClassName('container_pop')[0].appendChild(frthElemDiv);
+
+var sndElemPar = document.createElement('p');
+sndElemPar.classList.add('para_card_one');
+document.getElementsByClassName('container_pop')[0].appendChild(sndElemPar);
+
+var fiveElemDiv = document.createElement('div');
+fiveElemDiv.classList.add('tags_container');
+document.getElementsByClassName('container_pop')[0].appendChild(fiveElemDiv);
+
+var sixElemDiv = document.createElement('div');
+sixElemDiv.classList.add('tags_one');
+document.getElementsByClassName('tags_container')[0].appendChild(sixElemDiv);
+
+var sevenElemDiv = document.createElement('div');
+sevenElemDiv.classList.add('div_create');
+document.getElementsByClassName('tags_one')[0].appendChild(sevenElemDiv);
+
+var frstElemA = document.createElement('a');
+frstElemA.classList.add('tage_card_one');
+document.getElementsByClassName('div_create')[0].appendChild(frstElemA);
+
+var eightElemDiv = document.createElement('div');
+eightElemDiv.classList.add('div_create');
+document.getElementsByClassName('tags_one')[0].appendChild(eightElemDiv);
+
+var sndElemA = document.createElement('a');
+sndElemA.classList.add('tage_card_one');
+document.getElementsByClassName('div_create')[1].appendChild(sndElemA);
+
+var nineElemDiv = document.createElement('div');
+nineElemDiv.classList.add('div_create');
+document.getElementsByClassName('tags_one')[0].appendChild(nineElemDiv);
+
+var thrdElemA = document.createElement('a');
+thrdElemA.classList.add('tage_card_one');
+document.getElementsByClassName('div_create')[2].appendChild(thrdElemA);
+
+var tenthElemDiv = document.createElement('div');
+tenthElemDiv.classList.add('div_create');
+document.getElementsByClassName('tags_one')[0].appendChild(tenthElemDiv);
+
+var fourthElemA = document.createElement('a');
+fourthElemA.classList.add('tage_card_one');
+document.getElementsByClassName('div_create')[3].appendChild(fourthElemA);
+
+var eleveElemDiv = document.createElement('div');
+eleveElemDiv.classList.add('buttons_card_one');
+document.getElementsByClassName('container_pop')[0].appendChild(eleveElemDiv);
+
+var fstElemBtn = document.createElement('button');
+fstElemBtn.classList.add('button_card_one');
+fstElemBtn.setAttribute('id','see_live');
+fstElemBtn.setAttribute('type', 'button');
+document.getElementsByClassName('buttons_card_one')[0].appendChild(fstElemBtn);
+
+var sndElemBtn = document.createElement('button');
+sndElemBtn.classList.add('button_card_one');
+sndElemBtn.setAttribute('id','see_source');
+sndElemBtn.setAttribute('type', 'button');
+document.getElementsByClassName('buttons_card_one')[0].appendChild(sndElemBtn);
+
+//Here is where the html are created with js for the section works
+
+var worksElemH2 = document.createElement('h2');
+worksElemH2.classList.add('second_main');
+worksElemH2.innerText = 'My recent work';
+document.getElementById('portfolio_work').appendChild(worksElemH2);
+
+var worksElemDiv = document.createElement('div');
+worksElemDiv.classList.add('division_section_works');
+document.getElementById('portfolio_work').appendChild(worksElemDiv);
+
+
+//This part is a loop to create 4 times the 4 projects instead writinig manually 4 times and more lines of code
+for(var m = 0; m < 4; m++) {
+  if(m === 1 || m === 3) {
+    var workElemOne = document.createElement('div');
+    workElemOne.classList.add('container_works', 'special_flex');
+    document.getElementById('portfolio_work').appendChild(workElemOne);
+  } else {
+    var workElemOneReverse = document.createElement('div');
+    workElemOneReverse.classList.add('container_works', 'first_style_column');
+    document.getElementById('portfolio_work').appendChild(workElemOneReverse);
+  }
+  var workElemTwo = document.createElement('div');
+  workElemTwo.classList.add('first_logo');
+  document.getElementsByClassName('container_works')[m].appendChild(workElemTwo);
+
+  var workElemTree = document.createElement('div');
+  workElemTree.classList.add('container_column');
+  document.getElementsByClassName('container_works')[m].appendChild(workElemTree);
+
+  var workElemFour = document.createElement('article');
+  workElemFour.classList.add('firts_p');
+  document.getElementsByClassName('container_column')[m].appendChild(workElemFour);
+
+  var workElemFive = document.createElement('h2');
+  workElemFive.classList.add('fill_title');
+  document.getElementsByClassName('firts_p')[m].appendChild(workElemFive);
+
+  var workElemSix = document.createElement('p');
+  workElemSix.classList.add('fill_article');
+  document.getElementsByClassName('firts_p')[m].appendChild(workElemSix);
+
+  var workElemSeve = document.createElement('div');
+  workElemSeve.classList.add('list');
+  document.getElementsByClassName('container_column')[m].appendChild(workElemSeve);
+
+  var workElemEight = document.createElement('ul');
+  workElemEight.classList.add('grid_first');
+  document.getElementsByClassName('list')[m].appendChild(workElemEight);
+
+  var workElemNine = document.createElement('li');
+  workElemNine.classList.add('fill_list');
+  document.getElementsByClassName('grid_first')[m].appendChild(workElemNine);
+
+  var workElemTen = document.createElement('li');
+  workElemTen.classList.add('fill_list');
+  document.getElementsByClassName('grid_first')[m].appendChild(workElemTen);
+
+  var workElemEleven = document.createElement('li');
+  workElemEleven.classList.add('fill_list');
+  document.getElementsByClassName('grid_first')[m].appendChild(workElemEleven);
+
+  var workElemTwelve = document.createElement('li');
+  workElemTwelve.classList.add('fill_list');
+  document.getElementsByClassName('grid_first')[m].appendChild(workElemTwelve);
+
+  var workElemThirte = document.createElement('button');
+  workElemThirte.classList.add('button_pro');
+  workElemThirte.setAttribute('type', 'button');
+  workElemThirte.setAttribute("onclick","show_pop("+ m + ");");
+  document.getElementsByClassName('container_column')[m].appendChild(workElemThirte);
+
+  var workElemForteen = document.createElement('span');
+  workElemForteen.classList.add('fill_button');
+  document.getElementsByClassName('button_pro')[m].appendChild(workElemForteen);
+}
+
 var arrayProjects = [];
 
 for (var i = 0; i < 4; i++) {
@@ -27,7 +187,6 @@ for(var j = 0; j < arrayProjects.length; j++) {
   document.getElementsByClassName('fill_list')[count = count + 1].innerHTML = arrayProjects[j].technologies[1];
   document.getElementsByClassName('fill_list')[count = count + 1].innerHTML = arrayProjects[j].technologies[2];
   document.getElementsByClassName('fill_list')[count = count + 1].innerHTML = arrayProjects[j].technologies[3];
-  console.log(count);
 }
 
 var arrayInfo = [];
